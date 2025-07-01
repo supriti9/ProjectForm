@@ -15,7 +15,7 @@ export default function Apod() {
       setLoading(true);
       const formattedDate = date.toISOString().split('T')[0];
       try {
-      const res =  await axios.get(`http://localhost:5000/api/apod?date=${formattedDate}`);
+      const res =  await axios.get(`https://projectform-eid4.onrender.com/api/apod?date=${formattedDate}`);
           setApods(res.data);
           setError(null);
           setLoading(false);

@@ -8,7 +8,7 @@ const NeoChart = () => {
   useEffect(() => {
     const fetchNeoData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/neo');
+        const response = await axios.get('https://projectform-eid4.onrender.com/api/neo');
         const nearObjects = response.data.near_earth_objects;
         const formatData = Object.entries(nearObjects).reduce((acc,[date, asteroids]) =>{
         const finalData =  asteroids.map(asteroid => ({
