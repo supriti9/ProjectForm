@@ -1,0 +1,17 @@
+.apod-container {
+    padding: 1rem; 
+}
+
+.apod-picker {
+    margin-bottom: 1rem; 
+}
+
+.err-msg{
+    color: 'red' 
+}
+
+.img-bg{
+    width: '100%';
+    max-height: '500px';
+    object-fit: 'contain'
+}
